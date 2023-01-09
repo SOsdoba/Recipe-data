@@ -1,0 +1,47 @@
+
+mkdir recipe-data
+
+cd recipe-data
+git init
+
+echo Flour, Sugar and Eggs > Ingredients.txt
+echo Cake, Cookies, Ice Cream > Re
+cipes.txt
+echo Breakfast, Lunch and Supper >
+ Meals.txt
+
+git add .
+git commit -m "recipe files with i
+nitial data."
+
+git remote add origin https://github.com/SOsdoba/recipe-data.git
+git branch -M main
+git push -u origin main
+
+echo Paper and bags > recipes.txt
+
+git restore .
+
+echo Breakfast, lunch and lunch > meals.txt
+git add .
+
+git restore --staged .
+git restore .
+
+echo plastic and sugar > ingredients.txt
+git add .
+git commit -m "Updated ingredients file"
+
+git reset 0795fd0 --hard
+
+echo Flour, Sugar, Eggs, and Oil > ingredients.txt
+git add .
+git commit -m "change ingredients"
+
+git reset 0795fd0 --soft
+
+echo Cake, Cookies, Ice Cream and ices > recipes.txt
+git add .
+
+git commit -m "Final version"
+git push
